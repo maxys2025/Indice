@@ -16,23 +16,7 @@
       <button onclick="location.href='gioco4.html'">Gioco 4</button>
     </div>
   </div>
-<div class="petal-container"></div>
-<script>
-  const petalContainer = document.querySelector('.petal-container');
-
-  // Genera petali
-  for (let i = 0; i < 50; i++) {
-    const petal = document.createElement('div');
-    petal.classList.add('petal');
-
-    // Posizionamento casuale
-    petal.style.left = Math.random() * 100 + 'vw'; // Posizione orizzontale casuale
-    petal.style.top = '-' + Math.random() * 20 + 'px'; // Posizione verticale iniziale fuori schermo
-    petal.style.animationDuration = Math.random() * 3 + 4 + 's'; // Durata caduta tra 4-7 secondi
-    petal.style.animationDelay = Math.random() * 5 + 's'; // Ritardo casuale
-
-    petalContainer.appendChild(petal);
-  }
-</script>
+  <div class="petal-container"></div> <!-- Contenitore per i petali -->
+  <script src="script.js"></script>
 </body>
 </html>
