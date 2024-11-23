@@ -1,27 +1,16 @@
-/* Corpo della pagina */
 body {
+  background: #121212; /* Gradiente di sfondo */
   margin: 0;
   padding: 0;
-  font-family: 'Arial', sans-serif;
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
-  overflow: hidden;
-  background: #121212;
+  font-family: 'Arial', sans-serif;
+  flex-direction: column; /* Imposta il layout in colonna */
 }
 
-/* Contenitore */
-#title-container {
-  text-align: center;
-  background-color: ##1E1E1E;
-  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
-  padding: 30px;
-  width: 90%;
-  max-width: 500px;
-}
-
-#button-container {
+#container {
   text-align: center;
   background-color: #ffffff;
   border-radius: 15px;
@@ -31,25 +20,28 @@ body {
   max-width: 500px;
 }
 
-/* Pulsanti in layout Grid */
-#buttons {
+#title-container {
+  margin-bottom: 20px; /* Spazio tra il titolo e i pulsanti */
+}
+
+#button-container {
   display: grid;
-  grid-template-columns: repeat(2, 1fr); /* Due colonne uguali */
-  gap: 20px; /* Spaziatura tra i pulsanti */
-  margin-top: 20px;
+  grid-template-columns: repeat(2, 1fr); /* 2 pulsanti per riga */
+  gap: 10px; /* Spaziatura tra i pulsanti */
+  text-align: center;
 }
 
 button {
-  padding: 15px 20px;
-  font-size: 1em;
-  color: #fff;
   background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
   border: none;
   border-radius: 5px;
   cursor: pointer;
+  font-size: 1.2em;
   transition: background-color 0.3s;
 }
 
 button:hover {
-  background-color: #45a049; /* Colore al passaggio del mouse */
+  background-color: #45a049;
 }
