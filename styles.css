@@ -1,14 +1,17 @@
+/* Corpo della pagina */
 body {
-  background: linear-gradient(135deg, #535353, #23282b); /* Gradiente di sfondo */
   margin: 0;
   padding: 0;
+  font-family: 'Arial', sans-serif;
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
-  font-family: 'Arial', sans-serif;
+  overflow: hidden;
+  background: linear-gradient(135deg, #001D3D, #000814);
 }
 
+/* Contenitore */
 #container {
   text-align: center;
   background-color: #ffffff;
@@ -19,30 +22,37 @@ body {
   max-width: 500px;
 }
 
-#title-container {
-  margin-bottom: 20px; /* Distanza tra il titolo e i link */
-}
-
-#button-container {
+/* Pulsanti in layout Grid */
+#buttons {
   display: grid;
-  grid-template-columns: repeat(2, 1fr); /* 2 link per riga */
-  gap: 10px; /* Spaziatura tra i link */
-  text-align: center;
+  grid-template-columns: repeat(2, 1fr); /* Due colonne uguali */
+  gap: 20px; /* Spaziatura tra i pulsanti */
+  margin-top: 20px;
 }
 
-a {
-  display: block; /* Rende il link un blocco che occupa tutta la larghezza disponibile */
-  background-color: #4CAF50;
-  color: white;
-  padding: 10px 20px;
+button {
+  padding: 15px 20px;
+  font-size: 1em;
+  color: #fff;
+  background-color: #003566;
   border: none;
   border-radius: 5px;
-  text-align: center;
-  font-size: 1.2em;
-  text-decoration: none; /* Rimuove la sottolineatura */
+  cursor: pointer;
   transition: background-color 0.3s;
+  font-variant: small-caps; /* Applica il maiuscoletto */
+  font-weight: 450; /* Imposta il testo in grassetto */
 }
 
-a:hover {
-  background-color: #45a049;
+button:hover {
+  background-color: #023e8a; /* Colore al passaggio del mouse */
+}
+
+h1 {
+  font-size: 2em;
+  margin-bottom: 20px;
+  color: transparent; /* Rende il colore del testo trasparente */
+  background: linear-gradient(135deg, #FFC300, #990000); /* Imposta il gradiente */
+  -webkit-background-clip: text; /* Applica il gradiente al testo per i browser WebKit (Chrome, Safari) */
+  background-clip: text; /* Per i browser moderni */
+  font-variant: small-caps; /* Maiuscoletto */
 }
