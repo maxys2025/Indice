@@ -1,27 +1,53 @@
+/* Corpo della pagina */
 body {
-    background-color: #f0f0f0; /* Grigio chiaro */
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-    margin: 0;
-    font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, #535353, #23282b); /* Gradiente di sfondo */
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: 'Arial', sans-serif;
+  color: #333;
 }
 
-.question-box {
-    padding: 20px;
-    border-radius: 10px;
-    color: #333;
-    text-align: center;
-    font-size: 1.5em;
-    max-width: 400px;
-    margin-bottom: 20px;
-    transition: background-color 0.3s ease;
+/* Titolo */
+h1 {
+  font-size: 2em;
+  margin-bottom: 20px;
+  color: #4CAF50; /* Verde per il titolo */
 }
 
-button {
-    padding: 10px 20px;
-    font-size: 1em;
-    cursor: pointer;
+/* Contenitore */
+#container {
+  text-align: center;
+  background-color: #ffffff;
+  border-radius: 15px;
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
+  padding: 30px;
+  width: 90%;
+  max-width: 500px;
+  transition: transform 0.3s;
+}
+
+/* Pulsanti */
+#buttons button {
+  background-color: #4CAF50; /* Verde per i pulsanti */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 1em;
+  margin: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s;
+}
+
+#buttons button:hover {
+  background-color: #45a049;
+  transform: scale(1.05);
+}
+
+#buttons button:active {
+  background-color: #397d3f;
 }
