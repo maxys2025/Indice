@@ -8,14 +8,13 @@ body {
   align-items: center;
   height: 100vh;
   overflow: hidden;
-  background: linear-gradient(135deg, #535353, #23282b);
+  background: #121212;
 }
 
 /* Contenitore */
 #title-container {
   text-align: center;
-  background-color: #ffffff;
-  border-radius: 15px;
+  background-color: ##1E1E1E;
   box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
   padding: 30px;
   width: 90%;
