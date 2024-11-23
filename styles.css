@@ -15,20 +15,19 @@ body {
 /* Contenitore */
 #title-container {
   text-align: center;
-  background-color: #ffffff;
-  border-radius: 15px;
+  background-color: #1F1F1F;
   box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
-  padding: 30px;
+  padding: 10px;
   width: 90%;
   max-width: 500px;
+  margin-bottom: 20px;
 }
 
 #button-container {
   text-align: center;
-  background-color: #ffffff;
-  border-radius: 15px;
+  background-color: #1F1F1F;
   box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
-  padding: 30px;
+  padding: 10px;
   width: 90%;
   max-width: 500px;
 }
