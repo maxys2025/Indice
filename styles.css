@@ -52,33 +52,31 @@ h1 {
   background-color: #397d3f;
 }
 
-/* Petali rosa */
-.petals::before,
-.petals::after {
-  content: '';
+/* Contenitore dei petali */
+.petal-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  pointer-events: none; /* Rende i petali non interattivi */
+  z-index: 1;
+}
+
+/* Stile dei petali */
+.petal {
   position: absolute;
   width: 15px;
   height: 15px;
-  background: rgba(255, 182, 193, 0.8); /* Colore rosa chiaro */
+  background: rgba(255, 182, 193, 0.8); /* Rosa chiaro */
   border-radius: 50%;
-  animation: fall 6s linear infinite, sway 2s ease-in-out infinite;
-  pointer-events: none;
+  box-shadow: 0 0 8px rgba(255, 182, 193, 0.6);
+  animation: fall linear infinite, sway ease-in-out infinite;
+  opacity: 0.8;
 }
 
-.petals::before {
-  box-shadow: 0 0 10px rgba(255, 182, 193, 0.6);
-  top: -10%;
-  left: 10%;
-}
-
-.petals::after {
-  box-shadow: 0 0 10px rgba(255, 105, 180, 0.8);
-  top: -10%;
-  left: 80%;
-  animation-delay: 3s;
-}
-
-/* Animazioni */
+/* Animazione di caduta */
 @keyframes fall {
   0% {
     transform: translateY(-100%) rotate(0deg);
@@ -90,6 +88,7 @@ h1 {
   }
 }
 
+/* Animazione di oscillazione */
 @keyframes sway {
   0%, 100% {
     transform: translateX(0);
