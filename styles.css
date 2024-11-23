@@ -9,10 +9,21 @@ body {
   height: 100vh;
   overflow: hidden;
   background: #121212;
+  flex-direction: column; /* Imposta il layout in colonna */
 }
 
 /* Contenitore */
-#container {
+#title-container {
+  text-align: center;
+  background-color: #ffffff;
+  border-radius: 15px;
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
+  padding: 30px;
+  width: 90%;
+  max-width: 500px;
+}
+
+#button-container {
   text-align: center;
   background-color: #ffffff;
   border-radius: 15px;
