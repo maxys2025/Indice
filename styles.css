@@ -41,7 +41,7 @@ button {
   cursor: pointer;
   transition: background-color 0.3s;
   font-variant: small-caps; /* Applica il maiuscoletto */
-  font-weight: 450; /* Imposta il testo in grassetto */
+  font-weight: 700; /* Imposta il testo in grassetto */
 }
 
 button:hover {
