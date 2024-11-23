@@ -44,3 +44,11 @@ button {
 button:hover {
   background-color: #023e8a; /* Colore al passaggio del mouse */
 }
+
+h1 {
+  font-size: 2em;
+  margin-bottom: 20px;
+  color: #001D3D; /* Verde */
+  font-variant: small-caps; /* Applica il maiuscoletto */
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Aggiunge un'ombra elegante */
+}
