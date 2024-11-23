@@ -50,5 +50,5 @@ h1 {
   margin-bottom: 20px;
   color: #001D3D; /* Verde */
   font-variant: small-caps; /* Applica il maiuscoletto */
-  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Aggiunge un'ombra elegante */
+  text-shadow: 0 0 10px #FFD60A, 0 0 20px #FFD60A, 0 0 30px #FFD60A;
 }
