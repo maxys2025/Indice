@@ -26,10 +26,10 @@
     petal.classList.add('petal');
 
     // Posizionamento casuale
-    petal.style.left = Math.random() * 100 + 'vw';
-    petal.style.animationDuration = Math.random() * 3 + 4 + 's'; // 4-7 secondi
+    petal.style.left = Math.random() * 100 + 'vw'; // Posizione orizzontale casuale
+    petal.style.top = '-' + Math.random() * 20 + 'px'; // Posizione verticale iniziale fuori schermo
+    petal.style.animationDuration = Math.random() * 3 + 4 + 's'; // Durata caduta tra 4-7 secondi
     petal.style.animationDelay = Math.random() * 5 + 's'; // Ritardo casuale
-    petal.style.animationName = 'fall, sway';
 
     petalContainer.appendChild(petal);
   }
