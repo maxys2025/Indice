@@ -50,7 +50,9 @@ button:hover {
 h1 {
   font-size: 2em;
   margin-bottom: 20px;
-  color: #001D3D; /* Verde */
-  font-variant: small-caps; /* Applica il maiuscoletto */
-  text-shadow: 0 0 10px #FFD60A, 0 0 20px #FFD60A, 0 0 30px #FFD60A;
+  color: transparent; /* Rende il colore del testo trasparente */
+  background: linear-gradient(135deg, #ff7e5f, #feb47b); /* Imposta il gradiente */
+  -webkit-background-clip: text; /* Applica il gradiente al testo per i browser WebKit (Chrome, Safari) */
+  background-clip: text; /* Per i browser moderni */
+  font-variant: small-caps; /* Maiuscoletto */
 }
