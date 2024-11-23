@@ -32,8 +32,8 @@ h1 {
 
 /* Pulsanti */
 #buttons button {
-  background-color: #990000; /* Rosso per i pulsanti */
-  color: white;
+  background-color: #000814; /* Rosso per i pulsanti */
+  color: #FFD60A;
   border: none;
   border-radius: 5px;
   padding: 10px 20px;
@@ -44,12 +44,12 @@ h1 {
 }
 
 #buttons button:hover {
-  background-color: #45a049;
+  background-color: #003566;
   transform: scale(1.05);
 }
 
 #buttons button:active {
-  background-color: #397d3f;
+  background-color: #001D3D;
 }
 
 /* Contenitore per i petali */
