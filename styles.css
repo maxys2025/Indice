@@ -72,7 +72,7 @@ h1 {
   background: rgba(255, 182, 193, 0.8); /* Rosa chiaro */
   border-radius: 50%;
   box-shadow: 0 0 8px rgba(255, 182, 193, 0.6);
-  animation: fall linear infinite, sway ease-in-out infinite;
+  animation: fall 6s linear infinite, sway 2s ease-in-out infinite;
   opacity: 0.8;
 }
 
