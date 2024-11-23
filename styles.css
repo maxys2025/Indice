@@ -1,21 +1,14 @@
 /* Corpo della pagina */
 body {
-  background: linear-gradient(135deg, #003566, #001D3D); /* Gradiente di sfondo */
   margin: 0;
   padding: 0;
+  font-family: 'Arial', sans-serif;
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
-  font-family: 'Arial', sans-serif;
-  color: #333;
-}
-
-/* Titolo */
-h1 {
-  font-size: 2em;
-  margin-bottom: 20px;
-  color: #990000; /* Rosso per il titolo */
+  overflow: hidden;
+  background: linear-gradient(135deg, #001D3D, #000814);
 }
 
 /* Contenitore */
@@ -27,72 +20,27 @@ h1 {
   padding: 30px;
   width: 90%;
   max-width: 500px;
-  transition: transform 0.3s;
 }
 
-/* Pulsanti */
-#buttons button {
-  background-color: #000814; /* Rosso per i pulsanti */
-  color: #FFD60A;
+/* Pulsanti in layout Grid */
+#buttons {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Due colonne uguali */
+  gap: 20px; /* Spaziatura tra i pulsanti */
+  margin-top: 20px;
+}
+
+button {
+  padding: 15px 20px;
+  font-size: 1em;
+  color: #fff;
+  background-color: #003566;
   border: none;
   border-radius: 5px;
-  padding: 10px 20px;
-  font-size: 1em;
-  margin: 10px;
   cursor: pointer;
-  transition: background-color 0.3s ease, transform 0.2s;
+  transition: background-color 0.3s;
 }
 
-#buttons button:hover {
-  background-color: #003566;
-  transform: scale(1.05);
-}
-
-#buttons button:active {
-  background-color: #001D3D;
-}
-
-/* Contenitore per i petali */
-.petal-container {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
-  pointer-events: none;
-  z-index: 1;
-}
-
-/* Stile dei petali */
-.petal {
-  position: absolute;
-  width: 15px;
-  height: 15px;
-  background: rgba(255, 182, 193, 0.8); /* Rosa chiaro */
-  border-radius: 50%;
-  box-shadow: 0 0 8px rgba(255, 182, 193, 0.6);
-  animation: fall linear infinite, sway ease-in-out infinite;
-}
-
-/* Animazione di caduta */
-@keyframes fall {
-  0% {
-    transform: translateY(-10vh);
-    opacity: 1;
-  }
-  100% {
-    transform: translateY(110vh);
-    opacity: 0;
-  }
-}
-
-/* Animazione di oscillazione */
-@keyframes sway {
-  0%, 100% {
-    transform: translateX(0);
-  }
-  50% {
-    transform: translateX(20px);
-  }
+button:hover {
+  background-color: #023e8a; /* Colore al passaggio del mouse */
 }
