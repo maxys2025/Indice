@@ -48,12 +48,13 @@ button {
   background-color: #d5497e;
   border: none;
   cursor: pointer;
-  transition: background-color 0.3s;
+  transition: background-color 0.3s, border-radius 0.3s; /* Transizione anche per border-radius */
   box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.5); /* Ombra decisa e scura */
+  border-radius: 0px; /* Angoli iniziali retti */
 }
 
 button:hover {
   background-color: #dc618b; /* Colore al passaggio del mouse */
   box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.5); /* Ombra decisa e scura */
-  border-radius: 5px;
+  border-radius: 15px; /* Angoli arrotondati al passaggio del mouse */
 }
