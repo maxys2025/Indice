@@ -38,7 +38,6 @@ body {
   display: grid;
   grid-template-columns: repeat(2, 1fr); /* Due colonne uguali */
   gap: 20px; /* Spaziatura tra i pulsanti */
-  margin-top: 20px;
 }
 
 button {
