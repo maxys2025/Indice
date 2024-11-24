@@ -61,7 +61,8 @@ button .button-description {
   color: #121212; /* Colore del testo per la descrizione */
   margin-top: 5px; /* Distanza dal titolo */
   font-weight: normal; /* Se vuoi che la descrizione non sia in grassetto */
-
+}
+  
 button:hover {
   background-color: #dc618b; /* Colore al passaggio del mouse */
   box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.5); /* Ombra decisa e scura */
