@@ -76,4 +76,5 @@ h1 {
   text-transform: uppercase; /* Trasforma il testo in maiuscolo */
   font-variant-caps: small-caps; /* Applica l'effetto maiuscoletto (opzionale) */
   text-align: center; /* Allinea il testo al centro */
+  box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.5); /* Ombra decisa e scura */
 }
