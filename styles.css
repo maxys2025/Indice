@@ -42,7 +42,7 @@ body {
 
 button {
   padding: 15px 20px;
-  font-size: 1em;
+  font-size: 1.2em;
   color: #121212;
   background-color: #d5497e;
   border: none;
@@ -56,7 +56,7 @@ button {
 
 button .button-description {
   display: block; /* Viene messo su una nuova riga */
-  font-size: 0.3em; /* Dimensione del testo più piccola */
+  font-size: 0.6em; /* Dimensione del testo più piccola */
   color: #121212; /* Colore del testo per la descrizione */
   margin-top: 5px; /* Distanza dal titolo */
   font-weight: normal; /* Se vuoi che la descrizione non sia in grassetto */
